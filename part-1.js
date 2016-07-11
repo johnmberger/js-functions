@@ -33,9 +33,13 @@ stringCapitalize = function(str) {
 
 // 5.
 evenNumbers = function(num){
-  for (i = 0; i < num; i++) {
-    if (i % 2 === 0) {
+  if (num > 100 || num < 0) {
+    console.log('Please enter a number between 1 and 100');
+  } else {
+    for (i = 0; i <= num; i++) {
+      if (i % 2 === 0) {
       console.log(i)
+      }
     }
   }
 }
@@ -51,7 +55,9 @@ isDivisible = function(arg1, arg2) {
 
 // 7. [Bonus]
 oddNumbers = function(num) {
-  if (num > 40){
+  if (num > 100 || num < 0) {
+    console.log('Please enter a number between 1 and 100');
+  } else if (num > 40){
     for (i=40; i<=num; i++){
       if (i % 2 === 1){
         console.log(i);
@@ -63,5 +69,7 @@ oddNumbers = function(num) {
         console.log(i);
       }
     }
+  } else {
+    console.log('You picked 40. There were no instructions for that!');
   }
 }
