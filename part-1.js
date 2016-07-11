@@ -49,7 +49,7 @@ isDivisible = function(arg1, arg2) {
   }
 }
 
-// 7.
+// 7. [Bonus]
 oddNumbers = function(num) {
   if (num > 40){
     for (i=40; i<=num; i++){
