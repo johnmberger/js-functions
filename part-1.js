@@ -47,7 +47,7 @@ evenNumbers = function(num){
 // 6.
 isDivisible = function(arg1, arg2) {
   if (arg1 % arg2 === 0 && arg2 !== 0) {
-    return true
+    return true;
   } else {
     return false;
   }
