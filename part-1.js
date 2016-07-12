@@ -66,7 +66,9 @@ console.log(isDivisible(78, 24));
 
 // 7. [Bonus]
 oddNumbers = function(num) {
-  if (num > 100 || num < 0) {
+  if (typeof num !== 'number') {
+    console.log('Please enter a number');
+  } else if (num > 100 || num < 0) {
     console.log('Please enter a number between 1 and 100');
   } else if (num > 40){
     for (i=40; i<=num; i++){
@@ -85,4 +87,4 @@ oddNumbers = function(num) {
   }
 }
 
-oddNumbers(79);
+oddNumbers('potato');
