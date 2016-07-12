@@ -1,7 +1,8 @@
-// 1.
+
 sum = function(num1, num2){
   return (num1 + num2);
 }
+console.log(sum(1,2));
 
 // 2.
 isEqual = function(arg1, arg2) {
@@ -12,6 +13,8 @@ isEqual = function(arg1, arg2) {
   }
 }
 
+console.log(isEqual('test', 'test'))
+
 // 3.
 discountPercentage = function(origAmount, discount) {
   if (discount > 100 || discount < 0) {
@@ -20,6 +23,8 @@ discountPercentage = function(origAmount, discount) {
     return (origAmount * (discount/100));
   }
 }
+
+console.log(discountPercentage(125, 25));
 
 // 4.
 stringCapitalize = function(str) {
@@ -30,6 +35,8 @@ stringCapitalize = function(str) {
     str[i] = str[i].join('');
   } return str.join(' ');
 }
+
+console.log(stringCapitalize('a long time ago in a galaxy far far away'));
 
 // 5.
 evenNumbers = function(num){
@@ -44,6 +51,8 @@ evenNumbers = function(num){
   }
 }
 
+evenNumbers(79);
+
 // 6.
 isDivisible = function(arg1, arg2) {
   if (arg1 % arg2 === 0 && arg2 !== 0) {
@@ -52,6 +61,8 @@ isDivisible = function(arg1, arg2) {
     return false;
   }
 }
+
+console.log(isDivisible(78, 24));
 
 // 7. [Bonus]
 oddNumbers = function(num) {
@@ -73,3 +84,5 @@ oddNumbers = function(num) {
     console.log('You picked 40. There were no instructions for that!');
   }
 }
+
+oddNumbers(79);
