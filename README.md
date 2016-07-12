@@ -12,20 +12,6 @@
 
 # JavaScript Functions - part 2
 
-1. Create a blank, valid HTML5 document.
-1. Create a JavaScript file
-1. Solve each of the given problems, creating a function that returns the value. Then output the result of the function to the JavaScript console.
-
-### Example
-
-```javascript
-function test(str) {
-  return "test" + str
-}
-
-console.log(test("ing"))
-```
-
 ## Problems
 
 1. Define a function called `oldestPerson` that takes an object with names as keys and ages as values (e.g., {'Chuck': 22, 'Brian': 46}), and then returns the name of the oldest living person.
